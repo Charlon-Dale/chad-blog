@@ -14,14 +14,16 @@ export default {
   setup() {
     console.log(this)
 
-    const param = ref(null)
+    const param = ref('hello')
+    console.log(param, param.value)
 
     let name = 'mario'
     let age = 30
 
     const handleClick = () => {
       console.log(param, param.value)
-      // param.value.classList.add('test')
+      param.value.classList.add('test')
+      param.value.textContent = 'hello, ninjas'
     }
 
     return { name, age, handleClick, param }
