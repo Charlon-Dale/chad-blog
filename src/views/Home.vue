@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     home
-    <p ref="p">My name is {{ name }} and my age is {{ age }}</p>
+    <p ref="param">My name is {{ name }} and my age is {{ age }}</p>
     <button @click="handleClick">Click me</button>
   </div>
 </template>
@@ -21,6 +21,7 @@ export default {
 
     const handleClick = () => {
       console.log(param, param.value)
+      // param.value.classList.add('test')
     }
 
     return { name, age, handleClick, param }
