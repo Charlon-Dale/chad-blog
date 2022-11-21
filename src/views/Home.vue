@@ -20,10 +20,10 @@ export default {
     let age = 30
 
     const handleClick = () => {
-      console.log('You clicked me')
+      console.log(param, param.value)
     }
 
-    return { name, age, handleClick, p }
+    return { name, age, handleClick, param }
   },
   data() {
     return {
