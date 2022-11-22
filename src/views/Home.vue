@@ -6,6 +6,7 @@
     <button @click="updateNinjaOne">Update Ninja One</button>
     <h2>Reactive</h2>
     <p>{{ ninjaTwo.name }} - {{ ninjaTwo.age }}</p>
+    <button @click="updateNinjaTwo">Update ninja two</button>
   </div>
 </template>
 
@@ -25,7 +26,7 @@ export default {
     const updateNinjaTwo = () => {
       ninjaTwo.age = 45
     }
-    return { ninjaOne, updateNinjaOne, ninjaTwo }
+    return { ninjaOne, updateNinjaOne, ninjaTwo, updateNinjaTwo }
   }
 }
 </script>
