@@ -4,7 +4,7 @@
     <input type="text" v-model="search">
     <p> search term - {{ search }}</p>
     <div v-for="name in matchingNames" :key="name">{{ name }}</div>
-    <button @click="handleClick"></button>
+    <button @click="handleClick">Stop watching</button>
   </div>
 </template>
 
