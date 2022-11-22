@@ -3,6 +3,7 @@
     home
     <p>My name is {{ name }} and my age is {{ age }}</p>
     <button @click="handleClick">Click me</button>
+    <input type="text" v-model="name">
   </div>
 </template>
 
@@ -26,7 +27,7 @@ export default {
   },
   data() {
     return {
-      age: 40
+      score: 5
     }
   }
 }
