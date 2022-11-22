@@ -12,18 +12,13 @@ import { ref } from 'vue'
 export default {
   name: 'Home',
   setup() {
-    console.log(this)
-
-    const param = ref('hello')
-    console.log(param, param.value)
-
-    let name = 'mario'
-    let age = 30
+    //const p = ref(null)
+    
+    const name = ref('mario')
+    const age = ref(30)
 
     const handleClick = () => {
-      console.log(param, param.value)
-      param.value.classList.add('test')
-      param.value.textContent = 'hello, ninjas'
+      name = 'luigi'
     }
 
     return { name, age, handleClick, param }
