@@ -23,7 +23,7 @@ export default {
     }
     
     const updateNinjaTwo = () => {
-      ninjaTwo.value.age = 40
+      ninjaTwo.age = 45
     }
     return { ninjaOne, updateNinjaOne, ninjaTwo }
   }
