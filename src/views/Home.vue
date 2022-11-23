@@ -9,32 +9,17 @@
 </template>
 
 <script>
-import { ref, computed, watch, watchEffect } from 'vue'
+import { ref } from 'vue'
 
 export default {
   name: 'Home',
   setup() {
-    const search = ref('')
-    const names = ref(['mario', 'yoshi', 'luigi', 'toad', 'bowser', 'koopa', 'peach'])
+    const posts = ref([
+      { title: 'Welcome to the blog', body: 'Lorem ipsum', id: 1 },
+      { title: 'top 5 CSS tips', body: 'lorem ipsum', id: 2 },
+    ])
     
-    const stopWatch = watch(search, () => {
-      console.log('watch function ran')
-    })
-
-    const stopEffect = watchEffect(() => {
-      console.log('watchEffect function ran', search.value)
-    })
-
-    const matchingNames = computed(() => {
-      return names.value.filter((name) => name.includes(search.value))
-    })
-
-    const handleClick = () => {
-      stopWatch()
-      stopEffect()
-    }
-
-    return { names, search, matchingNames, handleClick }
+    return { posts }
   }
 }
 </script>
