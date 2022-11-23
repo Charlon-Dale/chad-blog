@@ -1,18 +1,17 @@
 <template>
   <div class="home">
     <h1>Home</h1>
-    <input type="text" v-model="search">
-    <p> search term - {{ search }}</p>
-    <div v-for="name in matchingNames" :key="name">{{ name }}</div>
-    <button @click="handleClick">Stop watching</button>
+    <PostList />
   </div>
 </template>
 
 <script>
+import PostList from '../components/PostList.vue'
 import { ref } from 'vue'
 
 export default {
   name: 'Home',
+  components: { PostList },
   setup() {
     const posts = ref([
       { title: 'Welcome to the blog', body: 'Lorem ipsum', id: 1 },
