@@ -17,8 +17,7 @@ export default {
         onMounted(() => console.log('component mounted'))
         onUnmounted(() => console.log('component unmounted'))
         onUpdated(() => console.log('component updated'))
-    
-    }
+    },
 }
 </script>
 
