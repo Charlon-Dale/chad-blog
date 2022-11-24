@@ -11,11 +11,11 @@
 
 <script>
 import PostList from '../components/PostList.vue'
-import { ref } from 'vue'
+import getPost from '../composable/getPost.js'
 
 export default {
   name: 'Home',
-  components: { PostList },
+  components: { PostList, getPost },
   setup() {
     
     return { posts, error }
