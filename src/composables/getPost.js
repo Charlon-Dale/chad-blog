@@ -18,7 +18,7 @@ const getPost = () => {
       }
     }
 
-    return {posts , error, load}
+    return { posts , error, load }
 }
 
 export default getPost
