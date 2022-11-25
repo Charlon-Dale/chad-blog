@@ -11,7 +11,7 @@
 
 <script>
 import PostList from '../components/PostList.vue'
-import getPost from '../composables/getPost'
+import getPost from '../composables/getPosts'
 
 export default {
   name: 'Home',

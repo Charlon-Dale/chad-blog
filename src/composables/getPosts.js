@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 
-const getPost = () => {
+const getPosts = () => {
     const posts = ref([])
     const error = ref(null)
 
@@ -21,4 +21,4 @@ const getPost = () => {
     return { posts , error, load }
 }
 
-export default getPost
+export default getPosts
