@@ -11,13 +11,13 @@
 
 <script>
 import PostList from '../components/PostList.vue'
-import getPost from '../composables/getPosts'
+import getPosts from '../composables/getPosts'
 
 export default {
   name: 'Home',
   components: { PostList },
   setup() {
-    const {posts, error, load } = getPost()
+    const { posts, error, load } = getPosts()
 
     load()
 
